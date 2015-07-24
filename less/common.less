@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	background-color: @color-bg;
+	font: 18px/1 "Jura", sans-serif;
+	text-align: center;
+	color: @color-text;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+	color: @color-text;
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+.title {
+	position: fixed;
+	top: @indent-title;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	font-size: @size-title;
+	color: @color-white;
+	z-index: 2;
+
+	&:after {
+		content: '';
+		width: 100%;
+		height: @height-header;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: @color-bg;
+		z-index: -1;
+	}
+}
