@@ -6,1139 +6,1193 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-	<h1 class="title">Табло аэропорта</h1>
-	<input type="radio" id="departure" name="type" class="filter-radio" checked />
-	<label for="departure" class="filter filter_departure button">Вылет</label>
-	<input type="radio" id="arrival" name="type" class="filter-radio" />
-	<label for="arrival" class="filter filter_arrival button">Прилет</label>
-	<section class="scoreboard">
-		<div class="scoreboard_table">
-			<div class="scoreboard_head">
-				<div class="scoreboard_cell">Тип<span class="media_hidden"> рейса</span></div>
-				<div class="scoreboard_cell">Номер<span class="media_hidden"> рейса</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Авиакомпания</span><span class="media_short">Компания</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Тип&nbsp;воздушного<br/>судна</span><span class="media_short">Воздушное судно</span></div>
-				<div class="scoreboard_cell">Аэропорт<span class="media_hidden"> назначения</span></div>
-				<div class="scoreboard_cell">Время<span class="media_hidden"> по расписанию</span></div>
-				<div class="scoreboard_cell">Статус<span class="media_hidden"> рейса</span></div>
-				<div class="scoreboard_cell">Примечание</div>
-			</div>
-			<a href="#flight_01" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">UN 353</div>
-				<div class="scoreboard_cell"><img src="img/transaero.png" class="scoreboard_image"><span class="media_company">Трансаэро</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-700</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Лондон (Хитроу)</div>
-				<div class="scoreboard_cell">18:15<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Вылетел</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_02" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">TK 414</div>
-				<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А321</div>
-				<div class="scoreboard_cell">Стамбул (Ататюрк)</div>
-				<div class="scoreboard_cell">18:55<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Посадка закончена</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_03" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">ПЛ 6164</div>
-				<div class="scoreboard_cell"><img src="img/rossiya.png" class="scoreboard_image"><span class="media_company">Россия</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
-				<div class="scoreboard_cell">Ростов-на-Дону</div>
-				<div class="scoreboard_cell">19:10<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Посадка закончена</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_04" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">ДР 437</div>
-				<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Уфа</div>
-				<div class="scoreboard_cell">19:15<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_stop">Отменен</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_05" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">ЮТ 329</div>
-				<div class="scoreboard_cell"><img src="img/utair.png" class="scoreboard_image"><span class="media_company">ЮТэйр</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Калининград (Храброво)</div>
-				<div class="scoreboard_cell">19:30<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Посадка закончена</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_06" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">СУ 6154</div>
-				<div class="scoreboard_cell"><img src="img/aeroflot.png" class="scoreboard_image"><span class="media_company">Аэрофлот</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
-				<div class="scoreboard_cell">Санкт-Петербург (Пулково)</div>
-				<div class="scoreboard_cell">19:35<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Посадка</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_07" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">ДР 187</div>
-				<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Махачкала</div>
-				<div class="scoreboard_cell">19:40<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Посадка</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_08" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">ПЛ 6154</div>
-				<div class="scoreboard_cell"><img src="img/rossiya.png" class="scoreboard_image"><span class="media_company">Россия</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
-				<div class="scoreboard_cell">Анапа (Витязево)</div>
-				<div class="scoreboard_cell">20:15<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Регистрация</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_09" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">VS 7101</div>
-				<div class="scoreboard_cell"><img src="img/virginatlantic.png" class="scoreboard_image"><span class="media_company">Вёрджин атлантик эйрвейз</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Лондон (Хитроу)</div>
-				<div class="scoreboard_cell">20:20<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Регистрация</div>
-				<div class="scoreboard_cell">Совмещен<br/>UN 333</div>
-			</a>
-			<a href="#flight_10" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">UN 333</div>
-				<div class="scoreboard_cell"><img src="img/transaero.png" class="scoreboard_image"><span class="media_company">Трансаэро</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Лондон (Хитроу)</div>
-				<div class="scoreboard_cell">20:20<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Регистрация</div>
-				<div class="scoreboard_cell">Совмещен<br/>VS 7101</div>
-			</a>
-			<a href="#flight_11" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">UT 897</div>
-				<div class="scoreboard_cell"><img src="img/utair.png" class="scoreboard_image"><span class="media_company">ЮТэйр</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Киев (Жуляны интернэйшнл)</div>
-				<div class="scoreboard_cell">20:30<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Регистрация</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_12" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">Р2 5826</div>
-				<div class="scoreboard_cell"><img src="img/orenair.png" class="scoreboard_image"><span class="media_company">Оренбургские авиалинии</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Челябинск (Баландино)</div>
-				<div class="scoreboard_cell">20:55<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_stop">Задерживается<br/>21:20<br/>09.07.2015</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_13" class="scoreboard_row" data-type="departure">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="scoreboard_cell">W6 2490</div>
-				<div class="scoreboard_cell"><img src="img/wizz.png" class="scoreboard_image"><span class="media_company">Виз Эйр Венгрия</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А322</div>
-				<div class="scoreboard_cell">Будапешт (Ферихедь)</div>
-				<div class="scoreboard_cell">21:10<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_stop">Отменен</div>
-				<div class="scoreboard_cell"></div>
-			</a>
+<h1 class="title">Табло аэропорта</h1>
+<input type="radio" id="departure" name="type" class="filter-radio" checked />
+<label for="departure" class="filter filter_departure button">Вылет</label>
+<input type="radio" id="arrival" name="type" class="filter-radio" />
+<label for="arrival" class="filter filter_arrival button">Прилет</label>
+<section class="scoreboard">
+	<div class="scoreboard_table">
+		<div class="scoreboard_head">
+			<div class="scoreboard_cell">Тип<span class="media_hidden"> рейса</span></div>
+			<div class="scoreboard_cell">Номер<span class="media_hidden"> рейса</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Авиакомпания</span><span class="media_short">Компания</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Тип&nbsp;воздушного<br/>судна</span><span class="media_short">Воздушное судно</span></div>
+			<div class="scoreboard_cell">Аэропорт<span class="media_hidden"> назначения</span></div>
+			<div class="scoreboard_cell">Время<span class="media_hidden"> по расписанию</span></div>
+			<div class="scoreboard_cell">Статус<span class="media_hidden"> рейса</span></div>
+			<div class="scoreboard_cell">Примечание</div>
+		</div>
+		<a href="#flight_01" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">UN 353</div>
+			<div class="scoreboard_cell"><img src="img/transaero.png" class="scoreboard_image"><span class="media_company">Трансаэро</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-700</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Лондон (Хитроу)</div>
+			<div class="scoreboard_cell">18:15<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Вылетел</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_02" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">TK 414</div>
+			<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А321</div>
+			<div class="scoreboard_cell">Стамбул (Ататюрк)</div>
+			<div class="scoreboard_cell">18:55<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Посадка закончена</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_03" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">ПЛ 6164</div>
+			<div class="scoreboard_cell"><img src="img/rossiya.png" class="scoreboard_image"><span class="media_company">Россия</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
+			<div class="scoreboard_cell">Ростов-на-Дону</div>
+			<div class="scoreboard_cell">19:10<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Посадка закончена</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_04" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">ДР 437</div>
+			<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Уфа</div>
+			<div class="scoreboard_cell">19:15<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Отменен</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_05" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">ЮТ 329</div>
+			<div class="scoreboard_cell"><img src="img/utair.png" class="scoreboard_image"><span class="media_company">ЮТэйр</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Калининград (Храброво)</div>
+			<div class="scoreboard_cell">19:30<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Посадка закончена</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_06" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">СУ 6154</div>
+			<div class="scoreboard_cell"><img src="img/aeroflot.png" class="scoreboard_image"><span class="media_company">Аэрофлот</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
+			<div class="scoreboard_cell">Санкт-Петербург (Пулково)</div>
+			<div class="scoreboard_cell">19:35<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Посадка</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_07" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">ДР 187</div>
+			<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Махачкала</div>
+			<div class="scoreboard_cell">19:40<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Посадка</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_08" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">ПЛ 6154</div>
+			<div class="scoreboard_cell"><img src="img/rossiya.png" class="scoreboard_image"><span class="media_company">Россия</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А319</div>
+			<div class="scoreboard_cell">Анапа (Витязево)</div>
+			<div class="scoreboard_cell">20:15<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Регистрация</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_09" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">VS 7101</div>
+			<div class="scoreboard_cell"><img src="img/virginatlantic.png" class="scoreboard_image"><span class="media_company">Вёрджин атлантик эйрвейз</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Лондон (Хитроу)</div>
+			<div class="scoreboard_cell">20:20<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Регистрация</div>
+			<div class="scoreboard_cell">Совмещен<br/>UN 333</div>
+		</a>
+		<a href="#flight_10" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">UN 333</div>
+			<div class="scoreboard_cell"><img src="img/transaero.png" class="scoreboard_image"><span class="media_company">Трансаэро</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Лондон (Хитроу)</div>
+			<div class="scoreboard_cell">20:20<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Регистрация</div>
+			<div class="scoreboard_cell">Совмещен<br/>VS 7101</div>
+		</a>
+		<a href="#flight_11" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">UT 897</div>
+			<div class="scoreboard_cell"><img src="img/utair.png" class="scoreboard_image"><span class="media_company">ЮТэйр</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Киев (Жуляны интернэйшнл)</div>
+			<div class="scoreboard_cell">20:30<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Регистрация</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_12" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">Р2 5826</div>
+			<div class="scoreboard_cell"><img src="img/orenair.png" class="scoreboard_image"><span class="media_company">Оренбургские авиалинии</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Челябинск (Баландино)</div>
+			<div class="scoreboard_cell">20:55<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Задерживается<br/>21:20<br/>09.07.2015</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_13" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">W6 2490</div>
+			<div class="scoreboard_cell"><img src="img/wizz.png" class="scoreboard_image"><span class="media_company">Виз Эйр Венгрия</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А322</div>
+			<div class="scoreboard_cell">Будапешт (Ферихедь)</div>
+			<div class="scoreboard_cell">21:10<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Отменен</div>
+			<div class="scoreboard_cell">Совмещен<br/>СУ 6164</div>
+		</a>
+		<a href="#flight_14" class="scoreboard_row" data-type="departure">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="scoreboard_cell">СУ 6164</div>
+			<div class="scoreboard_cell"><img src="img/aeroflot.png" class="scoreboard_image"><span class="media_company">Аэрофлот</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Аэробус </span>А322</div>
+			<div class="scoreboard_cell">Будапешт (Ферихедь)</div>
+			<div class="scoreboard_cell">21:10<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Отменен</div>
+			<div class="scoreboard_cell">Совмещен<br/>W6 2490</div>
+		</a>
 
-			<a href="#flight_14" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">ДР 124</div>
-				<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
-				<div class="scoreboard_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</div>
-				<div class="scoreboard_cell">Сочи (Адлер)</div>
-				<div class="scoreboard_cell">18:20<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Вылетел</div>
-				<div class="scoreboard_cell">Совмещен<br/>ОП 944</div>
-			</a>
-			<a href="#flight_15" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">ОП 944</div>
-				<div class="scoreboard_cell"><img src="img/gazpromavia.png" class="scoreboard_image"><span class="media_company">Газпром авиа</span></div>
-				<div class="scoreboard_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</div>
-				<div class="scoreboard_cell">Сочи (Адлер)</div>
-				<div class="scoreboard_cell">18:20<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_attention">Вылетел</div>
-				<div class="scoreboard_cell">Совмещен<br/>ДР 124</div>
-			</a>
-			<a href="#flight_16" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">VS 7104</div>
-				<div class="scoreboard_cell"><img src="img/virginatlantic.png" class="scoreboard_image"><span class="media_company">Вёрджин атлантик эйрвейз</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Лондон (Хитроу)</div>
-				<div class="scoreboard_cell">20:40<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Приземлился</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_17" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">ТК 9013</div>
-				<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
-				<div class="scoreboard_cell"><span class="media_long">Боинг 737-400</span><span class="media_short">Б-737</span></div>
-				<div class="scoreboard_cell">Ханты-Мансийск</div>
-				<div class="scoreboard_cell">20:45<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_active">Приземлился</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_18" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">TK 212</div>
-				<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
-				<div class="scoreboard_cell"><span class="media_hidden">Аэробус </span>А321</div>
-				<div class="scoreboard_cell">Анталья</div>
-				<div class="scoreboard_cell">21:00<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_stop">Задерживается<br/>22:40<br/>09.07.2015</div>
-				<div class="scoreboard_cell"></div>
-			</a>
-			<a href="#flight_19" class="scoreboard_row" data-type="arrival">
-				<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
-				<div class="scoreboard_cell">ГГ 721</div>
-				<div class="scoreboard_cell"><img src="img/grozniy.png" class="scoreboard_image"><span class="media_company">Грозный Авиа</span></div>
-				<div class="scoreboard_cell"><span class="media_hidden">Яковлев </span>ЯК-42Д</div>
-				<div class="scoreboard_cell">Грозный</div>
-				<div class="scoreboard_cell">21:10<br/>09.07.2015</div>
-				<div class="scoreboard_cell status_stop">Отменен</div>
-				<div class="scoreboard_cell"></div>
-			</a>
+		<a href="#flight_15" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">ДР 124</div>
+			<div class="scoreboard_cell"><img src="img/pobeda.png" class="scoreboard_image"><span class="media_company">Победа</span></div>
+			<div class="scoreboard_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</div>
+			<div class="scoreboard_cell">Сочи (Адлер)</div>
+			<div class="scoreboard_cell">18:20<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Вылетел</div>
+			<div class="scoreboard_cell">Совмещен<br/>ОП 944</div>
+		</a>
+		<a href="#flight_16" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">ОП 944</div>
+			<div class="scoreboard_cell"><img src="img/gazpromavia.png" class="scoreboard_image"><span class="media_company">Газпром авиа</span></div>
+			<div class="scoreboard_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</div>
+			<div class="scoreboard_cell">Сочи (Адлер)</div>
+			<div class="scoreboard_cell">18:20<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_attention">Вылетел</div>
+			<div class="scoreboard_cell">Совмещен<br/>ДР 124</div>
+		</a>
+		<a href="#flight_17" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">VS 7104</div>
+			<div class="scoreboard_cell"><img src="img/virginatlantic.png" class="scoreboard_image"><span class="media_company">Вёрджин атлантик эйрвейз</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Лондон (Хитроу)</div>
+			<div class="scoreboard_cell">20:40<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Приземлился</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_18" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">ТК 9013</div>
+			<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
+			<div class="scoreboard_cell"><span class="media_long">Боинг 737-400</span><span class="media_short">Б-737</span></div>
+			<div class="scoreboard_cell">Ханты-Мансийск</div>
+			<div class="scoreboard_cell">20:45<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_active">Приземлился</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_19" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">TK 212</div>
+			<div class="scoreboard_cell"><img src="img/turkishairlines.png" class="scoreboard_image"><span class="media_company">Турецкие авиалинии</span></div>
+			<div class="scoreboard_cell"><span class="media_hidden">Аэробус </span>А321</div>
+			<div class="scoreboard_cell">Анталья</div>
+			<div class="scoreboard_cell">21:00<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Задерживается<br/>22:40<br/>09.07.2015</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+		<a href="#flight_20" class="scoreboard_row" data-type="arrival">
+			<div class="scoreboard_cell"><i class="scoreboard_icon fa fa-plane fa-rotate-180"></i><span class="media_type">Прилет</span></div>
+			<div class="scoreboard_cell">ГГ 721</div>
+			<div class="scoreboard_cell"><img src="img/grozniy.png" class="scoreboard_image"><span class="media_company">Грозный Авиа</span></div>
+			<div class="scoreboard_cell"><span class="media_hidden">Яковлев </span>ЯК-42Д</div>
+			<div class="scoreboard_cell">Грозный</div>
+			<div class="scoreboard_cell">21:10<br/>09.07.2015</div>
+			<div class="scoreboard_cell status_stop">Отменен</div>
+			<div class="scoreboard_cell"></div>
+		</a>
+	</div>
+</section>
+<section id="flight_01" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/transaero.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс UN 353</h2>
 		</div>
-	</section>
-	<section id="flight_01" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/transaero.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс UN 353</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">UN 353</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Трансаэро</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-700</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Лондон (Хитроу)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">18:15 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Вылетел</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">20</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">14.30 - 17.35</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">17.40 - 18.00</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">UN 353</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Трансаэро</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-700</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Лондон (Хитроу)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">18:15 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Вылетел</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">20</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">14.30 - 17.35</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">17.40 - 18.00</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_02" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс TK 414</h2>
 		</div>
-	</section>
-	<section id="flight_02" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс TK 414</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">TK 414</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Турецкие авиалинии</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Аэробус </span>А321</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Стамбул (Ататюрк)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">18:55 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Посадка закончена</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">13</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">13.30 - 18.15</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">18.25 - 18.40</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">TK 414</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Турецкие авиалинии</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А321</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Стамбул (Ататюрк)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">18:55 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Посадка закончена</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">13</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">13.30 - 18.15</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">18.25 - 18.40</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_03" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/rossiya.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ПЛ 6164</h2>
 		</div>
-	</section>
-	<section id="flight_03" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/rossiya.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ПЛ 6164</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ПЛ 6164</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Россия</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Ростов-на-Дону</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">19:10 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Посадка закончена</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">11A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.00 - 18.30</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">18.40 - 19.00</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ПЛ 6164</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Россия</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Ростов-на-Дону</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">19:10 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Посадка закончена</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">11A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.00 - 18.30</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">18.40 - 19.00</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_04" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ДР 437</h2>
 		</div>
-	</section>
-	<section id="flight_04" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ДР 437</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ДР 437</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Победа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Уфа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">19:15 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_stop">Отменен</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ДР 437</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Победа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Уфа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">19:15 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Отменен</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_05" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/utair.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ЮТ 329</h2>
 		</div>
-	</section>
-	<section id="flight_05" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/utair.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ЮТ 329</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ЮТ 329</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">ЮТэйр</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Калининград (Храброво)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">19:30 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Посадка закончена</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">11A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.25 - 19.00</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.10 - 19.20</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ЮТ 329</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">ЮТэйр</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Калининград (Храброво)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">19:30 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Посадка закончена</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">11A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.25 - 19.00</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.10 - 19.20</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_06" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/aeroflot.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс СУ 6154</h2>
 		</div>
-	</section>
-	<section id="flight_06" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/aeroflot.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс СУ 6154</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">СУ 6154</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Аэрофлот</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Санкт-Петербург (Пулково)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">19:35 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Посадка</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">13A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.40 - 19.10</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.15 - 19.20</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">СУ 6154</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Аэрофлот</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Санкт-Петербург (Пулково)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">19:35 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Посадка</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">13A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.40 - 19.10</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.15 - 19.20</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_07" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ДР 187</h2>
 		</div>
-	</section>
-	<section id="flight_07" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ДР 187</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ДР 187</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Победа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Махачкала</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">19:40 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Посадка</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">29A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">14.55 - 19.00</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.10 - 19.30</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ДР 187</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Победа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800 (в)</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Махачкала</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">19:40 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Посадка</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">29A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">14.55 - 19.00</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.10 - 19.30</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_08" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/rossiya.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ПЛ 6154</h2>
 		</div>
-	</section>
-	<section id="flight_08" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/rossiya.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ПЛ 6154</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ПЛ 6154</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Россия</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Анапа (Витязево)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:15 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Регистрация</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">11A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.55 - 19.45</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Стойки</td>
-					<td class="popup_cell">051 - 070, 078</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.50 - 20.05</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ПЛ 6154</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Россия</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А319</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Анапа (Витязево)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:15 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Регистрация</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">11A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.55 - 19.45</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Стойки</td>
+				<td class="popup_cell">051 - 070, 078</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.50 - 20.05</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_09" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/virginatlantic.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс VS 7101</h2>
 		</div>
-	</section>
-	<section id="flight_09" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/virginatlantic.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс VS 7101</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">VS 7101</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Вёрджин атлантик эйрвейз</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Лондон (Хитроу)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:20 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Регистрация</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Примечание</td>
-					<td class="popup_cell">Совмещен UN 333</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">10A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.45 - 19.40</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Стойки</td>
-					<td class="popup_cell">082, 086 - 088</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.55 - 20.05</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">VS 7101</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Вёрджин атлантик эйрвейз</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Лондон (Хитроу)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:20 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Регистрация</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен UN 333</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">10A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.45 - 19.40</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Стойки</td>
+				<td class="popup_cell">082, 086 - 088</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.55 - 20.05</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_10" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/transaero.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс UN 333</h2>
 		</div>
-	</section>
-	<section id="flight_10" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/transaero.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс UN 333</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">UN 333</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Трансаэро</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Лондон (Хитроу)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:20 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Регистрация</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Примечание</td>
-					<td class="popup_cell">Совмещен VS 7101</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">10A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.45 - 19.40</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Стойки</td>
-					<td class="popup_cell">082, 086 - 088</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">19.55 - 20.05</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">UN 333</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Трансаэро</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Лондон (Хитроу)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:20 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Регистрация</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен VS 7101</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">10A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.45 - 19.40</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Стойки</td>
+				<td class="popup_cell">082, 086 - 088</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">19.55 - 20.05</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_11" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/utair.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс UT 897</h2>
 		</div>
-	</section>
-	<section id="flight_11" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/utair.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс UT 897</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">UT 897</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">ЮТэйр</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Киев (Жуляны интернэйшнл)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:30 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Регистрация</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">12A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.30 - 19.45</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Стойки</td>
-					<td class="popup_cell">051 - 070, 078</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">20.00 - 20.15</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">UT 897</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">ЮТэйр</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-500</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Киев (Жуляны интернэйшнл)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:30 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Регистрация</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">12A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.30 - 19.45</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Стойки</td>
+				<td class="popup_cell">051 - 070, 078</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">20.00 - 20.15</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_12" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/orenair.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс Р2 5826</h2>
 		</div>
-	</section>
-	<section id="flight_12" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/orenair.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс Р2 5826</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">Р2 5826</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Оренбургские авиалинии</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Челябинск (Баландино)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:55 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_stop">Задерживается 21:20 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выход</td>
-					<td class="popup_cell">23A</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Регистрация</td>
-					<td class="popup_cell">15.40 - 20.10</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Стойки</td>
-					<td class="popup_cell">082, 091, 095 - 101</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Посадка</td>
-					<td class="popup_cell">21.00 - 21.10</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">Р2 5826</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Оренбургские авиалинии</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Челябинск (Баландино)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:55 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Задерживается 21:20 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выход</td>
+				<td class="popup_cell">23A</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Регистрация</td>
+				<td class="popup_cell">15.40 - 20.10</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Стойки</td>
+				<td class="popup_cell">082, 091, 095 - 101</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Посадка</td>
+				<td class="popup_cell">21.00 - 21.10</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_13" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/wizz.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс W6 2490</h2>
 		</div>
-	</section>
-	<section id="flight_13" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/wizz.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс W6 2490</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">W6 2490</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Виз Эйр Венгрия</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Аэробус </span>А322</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Будапешт (Ферихедь)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">21:10 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_stop">Отменен</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">W6 2490</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Виз Эйр Венгрия</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А322</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Будапешт (Ферихедь)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">21:10 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Отменен</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен СУ 6164</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_14" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/aeroflot.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс СУ 6164</h2>
 		</div>
-	</section>
-	<section id="flight_14" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ДР 124</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ДР 124</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Победа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Сочи (Адлер)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">18:20 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Вылетел</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Примечание</td>
-					<td class="popup_cell">Совмещен ОП 944</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">W6 СУ 6164</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Аэрофлот</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Аэробус </span>А322</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Будапешт (Ферихедь)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">21:10 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Отменен</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен W6 2490</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_15" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/pobeda.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ДР 124</h2>
 		</div>
-	</section>
-	<section id="flight_15" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/gazpromavia.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ОП 944</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ОП 944</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Газпром авиа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Сочи (Адлер)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">18:20 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_attention">Вылетел</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Примечание</td>
-					<td class="popup_cell">Совмещен ДР 124</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ДР 124</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Победа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Сочи (Адлер)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">18:20 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Вылетел</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен ОП 944</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_16" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/gazpromavia.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ОП 944</h2>
 		</div>
-	</section>
-	<section id="flight_16" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/virginatlantic.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс VS 7104</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">VS 7104</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Вёрджин атлантик эйрвейз</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Лондон (Хитроу)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:40 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Приземлился</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выдача багажа</td>
-					<td class="popup_cell">Закончена А05</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ОП 944</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Газпром авиа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_hidden">Сухой Суперджет </span>СУ-95</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Сочи (Адлер)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">18:20 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_attention">Вылетел</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Примечание</td>
+				<td class="popup_cell">Совмещен ДР 124</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_17" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/virginatlantic.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс VS 7104</h2>
 		</div>
-	</section>
-	<section id="flight_17" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ТК 9013</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ТК 9013</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Турецкие авиалинии</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_long">Боинг 737-400</span><span class="media_short">Б-737</span></td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Ханты-Мансийск)</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">20:45 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_active">Приземлился</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Выдача багажа</td>
-					<td class="popup_cell">А05</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">А</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">VS 7104</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Вёрджин атлантик эйрвейз</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-800</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Лондон (Хитроу)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:40 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Приземлился</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выдача багажа</td>
+				<td class="popup_cell">Закончена А05</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_18" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ТК 9013</h2>
 		</div>
-	</section>
-	<section id="flight_18" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс TK 212</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">TK 212</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Турецкие авиалинии</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_hidden">Аэробус </span>А321</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Анталья</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">21:00 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_stop">Задерживается 22:40 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Терминал</td>
-					<td class="popup_cell">A</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ТК 9013</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Турецкие авиалинии</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_long">Боинг 737-400</span><span class="media_short">Б-737</span></td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Ханты-Мансийск)</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">20:45 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_active">Приземлился</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Выдача багажа</td>
+				<td class="popup_cell">А05</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">А</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_19" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/turkishairlines.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс TK 212</h2>
 		</div>
-	</section>
-	<section id="flight_19" class="popup">
-		<div class="popup_content">
-			<a href="#close" class="popup_close button">Х</a>
-			<div class="popup_header">
-				<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
-				<div class="popup_company"><img src="img/grozniy.png" class="popup_image"></div>
-				<h2 class="popup_title">Рейс ГГ 721</h2>
-			</div>
-			<table class="popup_table">
-				<tr class="popup_row">
-					<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell">ГГ 721</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Авиакомпания</td>
-					<td class="popup_cell">Грозный Авиа</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
-					<td class="popup_cell"><span class="media_hidden">Яковлев </span>ЯК-42Д</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
-					<td class="popup_cell">Грозный</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
-					<td class="popup_cell">21:10 09.07.2015</td>
-				</tr>
-				<tr class="popup_row">
-					<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
-					<td class="popup_cell status_stop">Отменен</td>
-				</tr>
-			</table>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">TK 212</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Турецкие авиалинии</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_hidden">Аэробус </span>А321</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Анталья</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">21:00 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Задерживается 22:40 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Терминал</td>
+				<td class="popup_cell">A</td>
+			</tr>
+		</table>
+	</div>
+</section>
+<section id="flight_20" class="popup">
+	<div class="popup_content">
+		<a href="#close" class="popup_close button">Х</a>
+		<div class="popup_header">
+			<div class="popup_type"><i class="popup_icon fa fa-plane"></i><span class="media_type">Вылет</span></div>
+			<div class="popup_company"><img src="img/grozniy.png" class="popup_image"></div>
+			<h2 class="popup_title">Рейс ГГ 721</h2>
 		</div>
-	</section>
+		<table class="popup_table">
+			<tr class="popup_row">
+				<td class="popup_cell">Номер<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell">ГГ 721</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Авиакомпания</td>
+				<td class="popup_cell">Грозный Авиа</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell"><span class="media_long">Тип воздушного судна</span><span class="media_short">Воздушное судно</span></td>
+				<td class="popup_cell"><span class="media_hidden">Яковлев </span>ЯК-42Д</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Аэропорт<span class="media_hidden"> назначения</span></td>
+				<td class="popup_cell">Грозный</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Время<span class="media_hidden"> по расписанию</span></td>
+				<td class="popup_cell">21:10 09.07.2015</td>
+			</tr>
+			<tr class="popup_row">
+				<td class="popup_cell">Статус<span class="media_hidden"> рейса</span></td>
+				<td class="popup_cell status_stop">Отменен</td>
+			</tr>
+		</table>
+	</div>
+</section>
 </body>
 </html>
