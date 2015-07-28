@@ -6,6 +6,7 @@ body {
 	font: 18px/1 "Jura", sans-serif;
 	text-align: center;
 	color: #333333;
+	overflow-x: hidden;
 }
 a,
 a:hover,
